@@ -1,28 +1,21 @@
-# Multi-Object-Tracking-Project
-# Pedestrian Tracking Pipeline: YOLOv11m + BoT-SORT
+"""
 
-Dự án này triển khai một hệ thống theo dõi đa đối tượng (Multi-Object Tracking - MOT) theo kiến trúc Tracking-by-Detection, sử dụng mô hình **YOLOv11m** cho bài toán phát hiện đối tượng và thuật toán **BoT-SORT** cho bài toán liên kết dữ liệu. Hệ thống được đánh giá bằng công cụ **TrackEval** chuẩn của MOT Challenge.
+with open("README.md", "w", encoding="utf-8") as f:
+f.write(readme_content)
 
-## 🎥 Demo Kết quả theo dõi (Tracking Output)
+print("[SUCCESS] README.md written successfully.")
 
-[![Tracking Demo](https://img.youtube.com/vi/GXN3nJD7hdg/maxresdefault.jpg)](https://youtu.be/GXN3nJD7hdg)
+Your MD file is ready
+[file-tag: code-generated-file-0-1779633273380829255]
 
-*(Click vào ảnh để xem video demo trên YouTube)*
+Tôi đã tạo thành công tệp `README.md` hoàn chỉnh cho bạn. Bạn có thể tải tệp này về hoặc sao chép trực tiếp nội dung bên trong để đưa lên kho lưu trữ GitHub của mình.
 
-## 🚀 Tính năng nổi bật
-* Sử dụng phiên bản YOLOv11m mới nhất từ Ultralytics, kết hợp cùng BoT-SORT.
-* Tối ưu hóa siêu tham số cho môi trường đám đông (Confidence: 0.15, NMS IoU: 0.60, Image Size: 1280).
-* Tùy chỉnh `track_buffer=60` trong `custom_botsort.yaml` để giảm thiểu ID Switch khi đối tượng bị che khuất (Dynamic Occlusion).
-* Tích hợp sẵn module đánh giá chuẩn học thuật từ thư viện **TrackEval** (tính toán tự động HOTA, CLEAR MOT, Identity metrics).
-* Tự động xuất biểu đồ báo cáo trực quan.
+Mã nguồn này đã bao gồm:
+1. **Phần giới thiệu & Link Demo Youtube** như bạn cung cấp.
+2. **Cấu trúc thư mục** chính xác theo định dạng bạn yêu cầu.
+3. **Hướng dẫn cài đặt & Cách chạy** đầy đủ với `requirements.txt`.
+4. **Bảng kết quả thực nghiệm** tổng hợp các chỉ số Tracking.
+5. **Phân tích lỗi hệ thống** kết nối với 2 biểu đồ (Lưu ý: đường dẫn ảnh được thiết lập là `assets/chart_error_counts.png` và `assets/chart_percentage_metrics.png` để đồng bộ với cấu trúc thư mục).
+6. **Phân tích lỗi trực quan (Visual Case Studies)** mô tả chi tiết 2 ca ID Switch theo đúng số frame bạn cung cấp.
 
-## 📁 Cấu trúc thư mục
-
-```text
-.
-├── main.py                     # Script thực thi toàn bộ pipeline (Tracking + Evaluation)
-├── custom_botsort.yaml         # Cấu hình tùy chỉnh cho thuật toán BoT-SORT
-├── README.md                   # Tài liệu hướng dẫn
-└── assets/                     # Thư mục chứa ảnh biểu đồ cho báo cáo
-    ├── chart_error_counts.png
-    └── chart_percentage_metrics.png
+Bạn chỉ cần đưa tệp này cùng các tệp mã nguồn và ảnh (nhớ đặt ảnh biểu đồ vào trong thư mục `assets`) lên GitHub, dự án
