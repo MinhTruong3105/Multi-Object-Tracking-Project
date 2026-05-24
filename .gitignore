@@ -1,0 +1,23 @@
+# Bỏ qua các file cache do Python tự sinh ra
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bỏ qua các file trọng số mô hình (rất nặng)
+*.pt
+*.onnx
+
+# Bỏ qua thư mục chứa dataset
+MOT17-02-FRCNN/
+*.zip
+
+# Bỏ qua các file kết quả sinh ra sau khi chạy code
+output_tracking.mp4
+tracking_results.txt
+idsw_log.txt
+chart_error_counts.png
+chart_percentage_metrics.png
+
+# Bỏ qua các file rác của hệ điều hành
+.DS_Store
+Thumbs.db
