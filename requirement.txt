@@ -1,0 +1,8 @@
+numpy>=1.23.0
+opencv-python>=4.8.0
+matplotlib>=3.7.0
+ultralytics>=8.0.0
+
+# Lưu ý: Thư viện TrackEval không cài trực tiếp qua PyPI được.
+# Hãy chạy lệnh sau trong terminal để cài đặt TrackEval:
+# pip install git+https://github.com/JonathonLuiten/TrackEval.git
