@@ -1,0 +1,11 @@
+tracker_type: botsort
+track_high_thresh: 0.4      # Threshold for the first association (lowered slightly for better recall)
+track_low_thresh: 0.1       # Threshold for the second association
+new_track_thresh: 0.5       # Must have at least 0.5 conf to start a brand new track (filters out noise IDs)
+track_buffer: 60            # Increased to 60 frames (2 seconds) to float tracks through longer occlusions, reduces IDSW!
+match_thresh: 0.8           # Threshold for matching tracks
+gmc_method: sparseOptFlow   # Global motion compensation
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+with_reid: False
+fuse_score: True            # Required by modern Ultralytics (fuses detection score with bounding box IoU/ReID matches)
